@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --color1: #251F47;
+    --color2: #404E7C;
+    --color3: #71B48D;
+    --color4: #86CB92;
+    --white: #ffff;
+}
+
+*{
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--white);
+}
+
+.body{
+    background-color: var(--white);
+    width: 100rem;
+    height: 100vmax;
+    margin: 0 auto;
+}
+
+/* Navbar Kısmı */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color2);
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    font-size: 16px;
+}
+
+.search-form button {
+    font-size: 1.1rem;
+    padding: 10px;
+    border: none;
+    background-color: var(--color1);
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+
+.icons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
+    color: var(--white);
+}
+
+/* Navbar Kısmı Bitiş*/
+
+/* Banner Kısmı */
+
+.banner{
+    background-image: url("banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+    height: 56.3rem;
+}
+
+.bannerWrite{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bannerWrite>h1{
+    margin-bottom: 2rem;
+    font-size: 7rem;
+}
+
+.bannerWrite>h5{
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+}
+
+.bannerBtn{
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.bannerBtn .btnF{
+    color: var(--white);
+    background-color: var(--color3);
+    margin-right: 5rem;
+    padding: 1rem;
+}
+
+.bannerBtn .btnS{
+    color: var(--white);
+    background-color: var(--color3);
+    padding: 1rem 2rem;
+}
+
+.btnF:hover, .btnS:hover{
+    background-color: var(--color4);
+}
+
+/* Banner Kısmı Bitiş*/
+
+/* Partner Kısmı */
+
+.homePartner{
+    background-color: var(--color3);
+    padding: 3rem 0rem;
+    margin-bottom: 6rem;
+}
+
+.homePartner>h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.partnerLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Partner Kısmı Bitiş*/
+
+/* Eğitimler Kısmı*/
+
+.courses{
+    padding: 10rem;
+    background-color: var(--white);
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--color3) 1rem solid;
+}
+.courses>h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.showCourses{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.box{
+    width: 20%;
+    height: 80%;
+    padding-bottom: 6rem;
+    border: gainsboro 2px solid;
+    box-shadow: 1px 1px 5px 1px gainsboro;
+    border-radius: 5%;
+}
+
+.box:hover{
+    box-shadow: 4px 4px 20px 4px var(--color4);
+}
+
+.box> h3,h6,p{
+    margin-left: 1rem;
+}
+
+.box>img{
+    padding: 1rem;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* Eğitimler Kısmı Bitiş */
+
+/* whyus Kısmı */
+
+.whyus{
+    background-image: url("whyus.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: end;
+}
+
+.whyText{
+    margin-right: 6rem;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+}
+
+.whyText>h2{
+    font-size: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.whyText>p{
+    color: gray;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* whyus Kısmı Bitiş*/
+
+/* community baslangic */
+
+.community{
+    text-align: center;
+    background-color: var(--color3);
+    height: 50rem;
+}
+
+.communityHeader>h2{
+    font-size: 5em;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.communityHeader>p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.communityCommit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.com{
+    background-color: var(--white);
+    border: gainsboro 2px solid;
+    border-radius: 5%;
+    width: 20%;
+    height: 32rem;
+}
+
+.com>img{
+    margin:1.5rem 0 1.5rem 0rem;
+    width: 50%;
+}
+
+.com>h3{
+    color: var(--color3);
+    font-size: 1.8rem;
+}
+
+.com>h5{
+    color: var(--color2);
+    font-size: 1rem;
+}
+
+.com>h6{
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color2);
+    width: 30%;
+    height: 0.2rem;
+}
+    
+
+.com>p{
+    margin: 1rem;
+    color: gray;
+}
+
+/* community bitiş */
+
+/* outcomes */
+
+.outcomes{
+    margin-top: 8rem;
+    background-image: url("outcomes.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: end;
+}
+
+.outcomesWrite{
+    margin-right: 6rem;
+    text-align: center;
+    width: 65%;
+    height: 100%;
+}
+
+.outcomesWrite>h2{
+    font-size: 4rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.outcomesWrite>p{
+    color: gray;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 4rem;
+}
+
+.outcomesWrite>a{
+    color: var(--white);
+    background-color: var(--color3);
+    padding: 1.5rem;
+}
+
+.outcomesWrite>a:hover{
+    background-color: var(--color4);
+}
+
+/* outcomes bitiş */
+
+/* footer baslangic */
+
+.footer{
+    bottom: 0; right: 0; left: 0;
+    background-color: var(--color1);
+    padding: 2rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.footer span{
+    color: red;
+}
