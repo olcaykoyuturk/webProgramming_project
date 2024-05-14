@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eğitim Platformu</title>
+    <title>Learnify</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -13,8 +13,8 @@
     <!--Navar Kısmı-->
     <nav>
         <div class="navright">
-            <a href="#" class="logo">ONLİNE EĞİTİM</a>
-            <a href="#" class="logo">Kategoriler</a>
+            <a href="index.html" class="logo">Learnify</a>
+            <a href="courses.html" class="logo">Eğitimler</a>
         </div>
 
         <form action="" method="post" class="search-form">
@@ -34,20 +34,21 @@
     <div class="body">
 
         <!-- Banner Kısmı -->
-        <div class="banner">
+        <section class="banner">
             <div class="bannerWrite">
-                <h1>Online Eğitim Platformu</h1>
-                <h5>Teknoloji ve iş dünyası hızla değişirken siz de Udemy ile hız kazanın. Yeni yetkinlikler edinerek hedeflerinize ulaşın ve rekabette önde olun.</h5>
+                <h1>Learnify</h1>
+                <h4>Online Eğitim Platformu</h4>
+                <h5>Teknoloji ve iş dünyası hızla değişirken siz de Learnify ile hız kazanın. Yeni yetkinlikler edinerek hedeflerinize ulaşın ve rekabette önde olun.</h5>
                 <div class="bannerBtn">
-                    <a href="#" class="btnF">> Eğitimleri Gör</a>
-                    <a href="#" class="btnS">> Biz Kimiz?</a>
+                    <button class="BannerFirst-btn" type="button"><span class="cover"></span>> Neden Biz?</button>
+                    <button class="BannerSecond-btn" type="button"><span class="cover"></span>> Eğitimler</button>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Banner Kısmı Bitiş -->
 
         <!-- Partner Kısmı -->
-        <div class="homePartner">
+        <section class="homePartner">
             <h2>Dünyanın dört bir yanından 15.000 + şirket ve milyonlarca öğrenci güveniyor</h2>
             <div class="partnerLogo">
                 <img src="img/svg/volkswagen.svg" alt="">
@@ -59,43 +60,157 @@
                 <img src="img/svg/cisco.svg" alt="">
                 <img src="img/svg/att.svg" alt="">
             </div>
-        </div>
+        </section>
         <!-- Partner Kısmı Bitiş -->
 
         <!-- Eğitimler Kısmı -->
-        <div class="courses">
-            <h2>Popüler Eğitimler</h2>
-            <div class="showCourses">
-                <div class="courseFirst box">
-                    <img src="img/Python-for-Beginners-4.png" alt="">
-                    <h3>İleri Seviye Pyhon</h3>
-                    <p>Olcay Koyutürk</p>
-                    <h6>600TL</h6>
+        
+        <section class="slider"> 
+            <h2 class="slider-category">En Çok Satan Eğitimler</h2>
+            <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+            <div class="slider-container">
+    
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">%50 İndirim</span>
+                        <img src="img/programming-in-java-a-step-by-step-tutorial-for-beginners-lesson-1.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Java Eğitim Serisi</h2>
+                        <p class="slider-short-description">Android , Web Geliştirme ve daha...</p>
+                        <span class="price">1200 TL</span><span class="actual-price">2400 TL</span>
+                    </div>
                 </div>
-                <div class="courseSecond box">
-                    <img src="img/programming-in-java-a-step-by-step-tutorial-for-beginners-lesson-1.png" alt="">
-                    <h3>İleri Düzey Java</h3>
-                    <p>Olcay Koyutürk</p>
-                    <h6>1200TL</h6>
+                
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">%50 İndirim</span>
+                        <img src="img/Python-for-Beginners-4.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Python Eğitim Serisi</h2>
+                        <p class="slider-short-description">Python üzerine her şey...</p>
+                        <span class="price">900 TL</span><span class="actual-price">1800 TL</span>
+                    </div>
                 </div>
-                <div class="courseThird box">
-                    <img src="img/af2348566b19d6081fb9206f8aedaf20690650e0-1400x935.png" alt="">
-                    <h3>Etik Hacker</h3>
-                    <p>Olcay Koyutürk</p>
-                    <h6>500TL</h6>
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">%30 İndirim</span>
+                        <img src="img/classic-lms-02.jpg" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Exel Eğitim Serisi</h2>
+                        <p class="slider-short-description">Exel üzerine her şey...</p>
+                        <span class="price">700 TL</span><span class="actual-price">1000 TL</span>
+                    </div>
                 </div>
-                <div class="courseFourth box">
-                    <img src="img/classic-lms-02.jpg" alt="">
-                    <h3>Exel Dersleri</h3>
-                    <p>Olcay Koyutürk</p>
-                    <h6>300TL</h6>
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">Popüler</span>
+                        <img src="img/af2348566b19d6081fb9206f8aedaf20690650e0-1400x935.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Etik Hacker Serisi</h2>
+                        <p class="slider-short-description">Etik hack üzerine her şey...</p>
+                        <span class="price">2000 TL</span><span class="actual-price"></span>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">Popüler</span>
+                        <img src="img/af2348566b19d6081fb9206f8aedaf20690650e0-1400x935.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Etik Hacker Serisi</h2>
+                        <p class="slider-short-description">Etik hack üzerine her şey...</p>
+                        <span class="price">2000 TL</span><span class="actual-price"></span>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">Popüler</span>
+                        <img src="img/af2348566b19d6081fb9206f8aedaf20690650e0-1400x935.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Etik Hacker Serisi</h2>
+                        <p class="slider-short-description">Etik hack üzerine her şey...</p>
+                        <span class="price">2000 TL</span><span class="actual-price"></span>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">Popüler</span>
+                        <img src="img/af2348566b19d6081fb9206f8aedaf20690650e0-1400x935.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Etik Hacker Serisi</h2>
+                        <p class="slider-short-description">Etik hack üzerine her şey...</p>
+                        <span class="price">2000 TL</span><span class="actual-price"></span>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">Popüler</span>
+                        <img src="img/af2348566b19d6081fb9206f8aedaf20690650e0-1400x935.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Etik Hacker Serisi</h2>
+                        <p class="slider-short-description">Etik hack üzerine her şey...</p>
+                        <span class="price">2000 TL</span><span class="actual-price"></span>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">Popüler</span>
+                        <img src="img/af2348566b19d6081fb9206f8aedaf20690650e0-1400x935.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Etik Hacker Serisi</h2>
+                        <p class="slider-short-description">Etik hack üzerine her şey...</p>
+                        <span class="price">2000 TL</span><span class="actual-price"></span>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">Popüler</span>
+                        <img src="img/af2348566b19d6081fb9206f8aedaf20690650e0-1400x935.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Etik Hacker Serisi</h2>
+                        <p class="slider-short-description">Etik hack üzerine her şey...</p>
+                        <span class="price">2000 TL</span><span class="actual-price"></span>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-image">
+                        <span class="discount-tag">Popüler</span>
+                        <img src="img/af2348566b19d6081fb9206f8aedaf20690650e0-1400x935.png" class="slider-thumb" alt="">
+                        <button class="card-btn">Sepete Ekle</button>
+                    </div>
+                    <div class="slider-info">
+                        <h2 class="slider-brand">Etik Hacker Serisi</h2>
+                        <p class="slider-short-description">Etik hack üzerine her şey...</p>
+                        <span class="price">2000 TL</span><span class="actual-price"></span>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <!-- Eğitimler Kısmı Bitiş-->
 
         <!-- Neden biz bla bla -->
-        <div class="whyus">
+        <section class="whyus">
             <div class="whyText">
                 <h2>Neden mi biz?</h2>
                 <p>Çünkü her adımımızda öğrencilerin başarısını ve memnuniyetini merkeze alıyoruz. Misyonumuz, 
@@ -104,18 +219,18 @@
                     ötesine taşımaktır. Değerlerimiz arasında yenilikçilik, dürüstlük ve öğrenci odaklı yaklaşım ön plandadır. 
                     Biz, öğrencilere kaliteli ve çeşitlilik sunarak öğrenmeyi keyifli hale getirir ve onların başarılarını destekleriz.</p>
             </div>
-        </div>
+        </section>
         <!-- Neden biz bla bla Bitiş-->
 
         <!-- community -->
-        <div class="community">
+        <section class="community">
             <div class="communityHeader">
                 <h2>From our community</h2>
                 <p>142+ million people have already joined</p>
             </div>
 
             <div class="communityCommit">
-                <div class="commitFirst com">
+                <div class="com">
                     <img src="img/Circle_Kenia.png" alt="">
                     <h3>Kenia R</h3>
                     <h5>United State</h5>
@@ -123,7 +238,7 @@
                     <p>"Being a mother — especially a working mother means I'm constantly trying to juggle my schedule, my kids' schedules, 
                         and work. I am very grateful for the flexible and remote learning programs that platform has to offer."</p>
                 </div>
-                <div class="commitSecond com">
+                <div class="com">
                     <img src="img/Circle_Ryan.png" alt="">
                     <h3>Ryan L</h3>
                     <h5>United State</h5>
@@ -132,7 +247,7 @@
                         With the knowledge I gained, I feel prepared for entry-level jobs and internships. I've been able to apply the 
                         skills and knowledge I gained to multiple projects and work experiences."</p>
                 </div>
-                <div class="commitThird com">
+                <div class="com">
                     <img src="img/Vishal_Verma.png" alt="">
                     <h3>Vishal V</h3>
                     <h5>India</h5>
@@ -144,22 +259,24 @@
             <!-- community Bitiş -->
 
             <!-- outcomes  -->
-            <div class="outcomes">
+            <section class="outcomes">
                 <div class="outcomesWrite">
                     <h2>Learner outcomes on Coursera</h2>
                     <p>77% of learners report career benefits, such as new skills, increased pay, and new job opportunities. 2023 Learner Outcomes Report.</p>
                     <a href="#">Ücretsiz Katıl</a>
                 </div>
-            </div>
+            </section>
             <!-- outcomes  Bitiş-->
 
             <!-- fotter -->
             <footer class="footer">
                 &copy; copyright @ 2024 by <span>Olcay Koyutürk</span> | all rights reserved!
             </footer>
-        </div>
+        </section>
 
     </div>
     <!-- Body Kısmı Bitiş -->
+
+    <script src="js/app.js"></script>
 </body>
 </html>
