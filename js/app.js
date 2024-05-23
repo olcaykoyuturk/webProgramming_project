@@ -73,36 +73,6 @@ document.querySelector(".BannerSecond-btn").addEventListener("click", function()
 
 // FİLTRELEME KISMI
 
-document.getElementById('filterBtn').addEventListener('click', filterAndSearchCourses);
-
-function filterAndSearchCourses() {
-    const category = document.getElementById('category').value.toLowerCase();
-    const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
-    const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
-    const searchQuery = document.getElementById('searchQuery').value.toLowerCase();
-
-    const courses = document.querySelectorAll('.course_box');
-
-    courses.forEach(course => {
-        const courseCategory = course.getAttribute('data-category').toLowerCase();
-        const coursePrice = parseInt(course.getAttribute('data-price'));
-        const courseTitle = course.querySelector('.course_search_about h2').textContent.toLowerCase();
-        const courseInstructor = course.querySelector('.course_search_about h4').textContent.toLowerCase();
-
-        const matchesCategory = (category === 'tümü' || courseCategory === category);
-        const matchesPrice = (coursePrice >= minPrice && coursePrice <= maxPrice);
-        const matchesSearch = (courseTitle.includes(searchQuery) || courseInstructor.includes(searchQuery));
-
-        if (matchesCategory && matchesPrice && matchesSearch) {
-            course.style.display = 'flex';
-        } else {
-            course.style.display = 'none';
-        }
-    });
-}
-
-
-
 
 
 

@@ -657,6 +657,11 @@ nav {
 .course_search:hover {
   box-shadow: 4px 4px 20px 4px gainsboro;
 }
+.course_search .course_search_img{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
 
 .course_search .course_search_img img {
   padding: 1rem;
