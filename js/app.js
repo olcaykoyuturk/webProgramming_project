@@ -70,15 +70,3 @@ document.getElementById("scrollButton").addEventListener("click", function() {
 document.querySelector(".BannerSecond-btn").addEventListener("click", function() {
   window.location.href = "courses.html";
 });
-
-// FİLTRELEME KISMI
-
-
-
-
-
-
-
-
-
-
